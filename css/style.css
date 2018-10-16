@@ -1,0 +1,50 @@
+*{
+    background-origin: content-box;  /* the border size included the box size */
+
+}
+.nav{
+    list-style-type: none;    /* to all */
+    margin: 0;
+    padding: 0;
+    border:2px solid black;
+    /* width: 350px; */  /* width all togother */
+
+   overflow: hidden;
+
+}
+.nav>li>a{                           /* to every one */
+    text-decoration: none;
+    display: block;
+    /* width: 70px; */     /* width the eche Home About .....*/
+    /* height: 50px; */
+     background-color:rgb(110, 27, 27); 
+    color : wheat;
+    padding-bottom: 10px; 
+    text-align: center;
+    
+
+
+   
+   
+
+
+}
+
+.nav>li>a:hover{
+    background-color: beige;
+    color: black;
+
+}
+.active>a{
+    background-color:blue !important;
+    color:red !important;
+
+}
+.nav>li{
+     border-bottom: 1px solid black;
+   float: left;    /* to make horiyintal  */
+    width: 20%;    /* width the whole page*/
+   
+}
+
+
