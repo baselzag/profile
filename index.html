@@ -3,86 +3,198 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Home</title>
+    <title>Index_English</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    
 </head>
-<body>
+<body class="backgroundImage">
 
-
-        <ul class="nav">
-                <li class="active"><a  href="index.html">Home</a></li>   
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="./germany/index_germany.html">Germany</a></li>
-        
-            </ul>
-      
-
-    <table style="font-size: xx-large" border="5px" bordercolor=green width=100%;
-    
-        
-<tr>
-<td ><img src="./imgs/Natur.jpg" width=100% height="300" alt"Natur">
-</td>
-</tr>
-
-    </table>
-
-    <table style="font-size: xx-large" border="5px" bordercolor=green width=100%;
-    <tr>
-        <td><h3>Skills </h3>
-            <ul style="list-style-type: square;">
-                <li>qqqq</li>
-                <li>wwww</li>
-                <li>eee</li>
-                <li>rrrrrr</li>
-            </ul>
-        </td>
-
-
-
-
-
-        <td><h3>Education</h3>
-            <ol type="1" >
-                    <li>ooo</li>
-                    <li>kkk</li>
-                    <li>hhh</li>
-                    <li>vvv</li>
-        
-        
-            </ol>
-        </td>
-        
-        
-
-</tr>
-
-
-    </table>
-
-
-
-      </ol>
-
-
-      
-            <p  style="text-align:center;
-            color:maroon;
-            font-size: 30px;">
-            
-        
-                 64 Eidelstedter Weg <br/>
-                 20000,Hamburg <br/>
-                 Hamburg,Germany
-                </p>
-
-        
-               
+        <header>
+            <a href="#" class="menuButton" onclick="showMenu()">Menu</a>
+            <ul class="nav" id="mainMenu">
+                <li class="active"><a  href="#" onclick="homeClick(this)">Home</a></li>
+                <li><a href="#" onclick="aboutClick(this)">About Me</a></li>
+                <li><a href="#" onclick="contactClick(this)">Contact</a></li>
+                <li><a href="#" onclick="galleryClick(this)">Gallery</a></li>
+                <li><a href="./index_german.html">German</a></li>
                 
+            </ul>      
+            </header>     
+            <h3> <marquee>Welcome to My website</marquee></h3>
+                
+
     
+
+
+
+    <div id="homeDiv" class="contentDiv" >
+        
+       
+           
+          
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 6</div>
+                  <img src="./images/10.jpg" style="width:100% ;height: 400px;">
+                  <div class="text">Caption One</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 6</div>
+                  <img src="./images/20.png" style="width:100% ;height: 400px;">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 6</div>
+                  <img src="./images/30.jpg" style="width:100% ;height: 400px;">
+                  <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="./images/40.jpg" style="width:100% ;height: 400px;">
+                    <div class="text">Caption Four</div>
+                  </div>
+                  
+                  <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="./images/50.jpg" style="width:100% ;height: 400px;">
+                    <div class="text">Caption Five</div>
+                  </div>
+                  
+                  <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="./images/60.png" style="width:100% ;height: 400px;">
+                    <div class="text">Caption Six</div>
+                  </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+        
+    </div>
+
+
+    <div id="aboutDiv" class="contentDiv" style="display: none;">
+        <h1>About</h1>
+        
+    </div>
+
+    <!-- gallery div  -->
+
+    
+    <div id="contactDiv" class="contentDiv" style="display: none;">      
+        
+      
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2368.6225112334105!2d9.947605415698689!3d53.582353380029154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b185ff84b24f2b%3A0x4210e2d3ba6ed6a4!2sEidelstedter+Weg%2C+Hamburg!5e0!3m2!1sde!2sde!4v1540955820356" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>       
+    
+        <div class="subdiv1">
+           <div>
+               <p class="divp">Name*</p>
+               <input type="text"  size="100" class="divinput"/>
+               
+           </div>
+
+           <div>
+                <p class="divp">Email*</p>
+                <input type="text" size="100"  class="divinput"/>
+            </div>
+
+            <div>
+                    <p class="divp">Subject*</p>
+                    <input type="text" size="100"  class="divinput"/>
+                </div>
+
+
+           <div>
+                <p class="divp">Message*</p>
+                <textarea rows="4" cols="50" class="divtextarea" ></textarea>
+            </div>
+
+            <input type="submit" class="divsubmit">
+              
+        </div>
+
+
+        <div class="subdiv2">
+       
+        <h1 >Basel Zaghmut</h1>
+        <ul >
+                <li>Deutschland, Hamburg<br />Eidelstedter Weg, 20255</li><br/>
+                <li>Handy: 004915788288373</li><br/>
+                <li><a href="mailto:Zaghmut.basel@web.de">Zaghmut.basel@web.de</a></li>
+            </ul> 
+        
+        </div>
+    
+
+
+    </div>
+
+
+    <div id="galleryDiv" class="contentDiv" style="display: none;">
+        <h1>Gallery</h1>
+
+          <!-- for eche foto there is main div -->
+    <div class="unit">
+        <a href="./images/1.jpg"  >
+        <img src="./images/1.jpg" alt="" width="300" height="200">
+        </a>
+    
+        <div class="desc"  >the description is here</div>
+    </div> 
+    
+        <div class="unit"> 
+        <a href="./images/2.jpg"  >
+        <img src="./images/2.jpg" alt="" width="300" height="200">
+        </a>
+    
+        <div class="desc"  >the description is here</div>
+    </div>
+    
+    
+        <div class="unit">
+        <a href="./images/3.jpg"  >
+        <img src="./images/3.jpg" alt="" width="300" height="200">
+        </a>
+    
+        <div class="desc"  >the description is here</div>
+    </div>
+    
+    
+        <div class="unit"> 
+        <a href="./images/4.jpg"  >
+        <img src="./images/4.jpg" alt="" width="300" height="200">
+        </a>
+    
+        <div class="desc"  >the description is here</div>
+    </div>
+    
+        <div class="unit">
+        <a href="./images/5.jpg"  >
+        <img src="./images/5.jpg" alt="" width="300" height="200">
+        </a>
+    
+        <div class="desc"  >the description is here</div>
+    </div>
+    </div>
+
+<footer>
+This page was last edited on 05 November 2018, at 09:00 Am
+</footer>
+
 </body>
+<script src="./js/javascript.js"></script>
 </html>
