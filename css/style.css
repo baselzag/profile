@@ -153,6 +153,17 @@ padding-left: 5px;
     font-weight: bold; 
 }
 
+.galp{
+    margin-left:50px;
+    font-size: 40px;
+    font-family: fantasy;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: bold; 
+    color: red;
+}
+
+
 .divsubmit{
     border:1px solid #999999;
     width:60px;
@@ -167,6 +178,7 @@ footer {
     color: black;
     margin-bottom: 30px;
     margin-top: 30px;
+    
   }
 
 h3 {
@@ -247,7 +259,7 @@ h3 {
     margin: 5px;
     border: 1px solid black;
     float: left;
-    width: 30%;
+    width: 19.3%;
 
 
 }
@@ -268,6 +280,7 @@ h3 {
 .desc{       
     padding: 15px;  /* padding = inside space */
     text-align: center;
+    color: blue;
 
 }
 
@@ -282,6 +295,8 @@ h3 {
 /* end gallery and responsive gallery */
 
  /* contact  */
+
+
 
  div.b {
     position: absolute;
