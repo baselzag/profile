@@ -1,5 +1,5 @@
 
-// sliderImages
+
 
 var slideIndex = 0;
 showSlides();
@@ -18,7 +18,7 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " activeee";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    setTimeout(showSlides, 2000); 
 }
 
 
@@ -26,7 +26,7 @@ function showSlides() {
 
 
 
-// for Tabs
+
 
 function homeClick(i){
     document.getElementsByClassName("active")[0].classList.remove("active");
@@ -62,10 +62,10 @@ function contactClick(him){
 
 }
 
-// end Tabs
 
 
-// for responsive navication bar
+
+
 
 function showMenu(){
     
@@ -80,9 +80,63 @@ function showMenu(){
 }
 
 
-// end responsive navication bar
 
 
+
+
+
+
+
+
+
+
+function personalDatenClick(d){
+    document.getElementsByClassName("nowAct")[0].classList.remove("nowAct");
+    d.parentNode.classList.add("nowAct");
+    document.getElementById("personalDaten").style="";
+    document.getElementById("education").style="display: none;";
+    document.getElementById("experience").style="display: none;";
+    document.getElementById("computerSkills").style="display: none;";
+    document.getElementById("languages").style="display: none;";
+}
+function experienceClick(h){
+    document.getElementsByClassName("nowAct")[0].classList.remove("nowAct");
+    h.parentNode.classList.add("nowAct");
+    document.getElementById("experience").style="";
+    document.getElementById("education").style="display: none;";
+    document.getElementById("personalDaten").style="display: none;";
+    document.getElementById("computerSkills").style="display: none;";
+    document.getElementById("languages").style="display: none;";
+}
+function computerSkillsClick(k){
+    document.getElementsByClassName("nowAct")[0].classList.remove("nowAct");
+    k.parentNode.classList.add("nowAct");
+    document.getElementById("experience").style="display: none;";
+    document.getElementById("computerSkills").style="";
+    document.getElementById("personalDaten").style="display: none;";
+    document.getElementById("education").style="display: none;";
+    document.getElementById("languages").style="display: none;";
+}
+function educationClick(n){
+    document.getElementsByClassName("nowAct")[0].classList.remove("nowAct");
+    n.parentNode.classList.add("nowAct");
+    document.getElementById("experience").style="display: none;";
+    document.getElementById("computerSkills").style="display: none;";
+    document.getElementById("personalDaten").style="display: none;";
+    document.getElementById("education").style="";
+    document.getElementById("languages").style="display: none;";
+
+}
+function languagesClick(l){
+    document.getElementsByClassName("nowAct")[0].classList.remove("nowAct");
+    l.parentNode.classList.add("nowAct");
+    document.getElementById("experience").style="display: none;";
+    document.getElementById("education").style="display: none;";
+    document.getElementById("personalDaten").style="display: none;";
+    document.getElementById("computerSkills").style="display: none;";
+    document.getElementById("languages").style="";
+
+}
 
 
 
